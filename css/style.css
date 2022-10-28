@@ -1,0 +1,156 @@
+body {
+    background-color: #FCFAF3;
+}
+.inline-block {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.logo {
+    width: 23%;
+    padding: 1%;
+    text-align: center;
+    display: inline-block;
+}
+
+.logo img{
+    width: 50px;
+}
+
+header {
+    padding: 15px;
+    background-color: #493B33;
+}
+
+header ul {
+    float: right;
+    color: white;
+}
+
+
+
+/* .navigation {
+    width: 73%;
+    padding: 1%;
+    height: 20px;
+}  */
+/* 
+/* nav ul {
+    list-style-type: none;
+    width: 50%;
+    margin-left: auto;
+} */
+
+/* nav li {
+    display: inline block;
+} */
+
+.heroImg {
+    width: 1200px;
+    /* height: 500px; */
+    padding: 25px;
+    /* transform: scale(.5); */
+    /* outline: 3px solid red; */
+}
+
+.content {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 50px;
+    background-color: #FCFAF3;
+    text-align: left;
+}
+
+button {
+    background-color: #ADC178;
+    color: #000000;
+    border: none;
+    padding: 10px 20px;
+    width: 200px; 
+}
+
+footer {
+    background-color: #493B33;
+    padding: 10px;
+    text-align: center;
+    /* border-top: #ADC178; */
+}
+
+footer ul{
+    list-style: none;
+    padding-left: 10px;
+    text-align: center;
+    color: white;
+}
+
+footer li {
+    display: inline-block;
+    padding: 0px 7px;
+}
+
+/* Unit 18: My UX Skills & My Work Section */
+
+/* My UX Skills */
+
+.flexContainer {
+    display: flex;
+    padding: 15px;
+    margin: 30px;
+    /* outline: 3px solid red; */
+}
+
+.flexChild {
+    width: 33%;
+    padding: 5px;
+    margin: 15px;
+    /* outline: 3px solid red; */
+}
+
+.flexChild img {
+    width: 100px;
+    height: 100px;
+}
+
+/* My Work */
+.workGrid {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "treasury ppi"
+    "treasuryDescription ppiDescription";
+    padding: 10px;
+    margin: 100px;
+    /* outline: 3px solid red; */
+}
+
+
+
+.workGrid img {
+    width: 300px;
+    padding: 15px;
+    margin: 20px;
+    /* outline: 3px solid red; */
+}
+
+@media only screen and (max-width: 800) {
+    .workGrid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.viewAll {
+    text-align: center;
+}
+
+h1 {
+    margin: 50px;
+    font-size: 34px;
+}
+
+h4 {
+    font-size: 22px;
+}
+
+
+
