@@ -7,14 +7,16 @@ body {
 }
 
 .logo {
-    width: 23%;
+    width: 50px;
+    height: 50px;
     padding: 1%;
     text-align: center;
-    display: inline-block;
 }
 
+/* should i put the image in CSS rather than HTML? */
 .logo img{
-    width: 50px;
+    width: 100%;
+    height: 100%;
 }
 
 header {
@@ -23,27 +25,20 @@ header {
 }
 
 header ul {
-    float: right;
     color: white;
+}
+
+header li {
+    list-style-type: none;
+    padding: 0px 20px;
 }
 
 
 
-/* .navigation {
-    width: 73%;
-    padding: 1%;
-    height: 20px;
-}  */
-/* 
-/* nav ul {
-    list-style-type: none;
-    width: 50%;
-    margin-left: auto;
-} */
-
-/* nav li {
-    display: inline block;
-} */
+.navigation {
+    justify-content: space-between;
+    align-items: center;
+} 
 
 .heroImg {
     width: 1200px;
@@ -94,9 +89,11 @@ footer li {
 
 .flexContainer {
     display: flex;
+}
+
+.skillContainer {
     padding: 15px;
     margin: 30px;
-    /* outline: 3px solid red; */
 }
 
 .flexChild {
@@ -117,11 +114,27 @@ footer li {
     grid-template-columns: 1fr 3fr;
     grid-template-rows: 1fr 1fr;
     grid-template-areas: 
-    "treasury ppi"
-    "treasuryDescription ppiDescription";
+    "treasury treasuryDescription"
+    "ppi ppiDescription";
     padding: 10px;
     margin: 100px;
     /* outline: 3px solid red; */
+}
+
+#treasury {
+    grid-area: treasury;
+}
+
+#treasuryDescription {
+    grid-area: treasuryDescription;
+}
+
+#ppi {
+    grid-area: ppi;
+}
+
+#ppiDescription {
+    grid-area: ppiDescription;
 }
 
 
@@ -133,9 +146,22 @@ footer li {
     /* outline: 3px solid red; */
 }
 
-@media only screen and (max-width: 800) {
+@media only screen and (max-width: 800px) {
     .workGrid {
         grid-template-columns: 1fr;
+        grid-template-areas: 
+            "treasury" 
+            "treasuryDescription"
+            "ppi" 
+            "ppiDescription";
+        text-align: center;
+    }
+    .skillContainer {
+        flex-direction: column;
+    }
+    .flexChild {
+        width: 100%;
+        text-align: center;
     }
 }
 
