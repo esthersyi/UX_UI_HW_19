@@ -96,6 +96,7 @@ button {
     width: 200px; 
     text-align: center;
     cursor: pointer;
+    border-radius: 10px;
 }
 
 footer {
