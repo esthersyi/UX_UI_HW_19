@@ -1,4 +1,4 @@
-console.log("Hover state");
+console.log("Your index.js file is loaded correctly!");
 
 $( "button").hover(
     function() {
@@ -11,3 +11,4 @@ $( "button").hover(
     }
 );
 
+console.log("Hover state loaded");

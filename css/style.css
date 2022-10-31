@@ -17,6 +17,7 @@ body {
 .logo img{
     width: 100%;
     height: 100%;
+    cursor: pointer;
 }
 
 header {
@@ -35,7 +36,9 @@ header li {
     padding: 0px 20px;
 }
 
-
+.navLinks {
+    cursor: pointer;
+}
 
 .navigation {
     justify-content: space-between;
@@ -77,6 +80,12 @@ header li {
 
 .meContent {
     padding: 80px 30px 1px 30px;
+    outline: 3px solid red;
+}
+
+#aboutMe {
+    text-align: left;
+    padding: 0px;
 }
 
 button {
@@ -136,12 +145,12 @@ footer li {
 /* My Work */
 .workGrid {
     display: grid;
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-template-areas: 
     "treasury treasuryDescription"
-    "ppi ppiDescription";
-    padding: 10px;
+    "ppiDescription ppi";
+    padding: 50px;
     margin: 100px;
     /* outline: 3px solid red; */
 }
@@ -152,6 +161,7 @@ footer li {
 
 #treasuryDescription {
     grid-area: treasuryDescription;
+    /* outline: 3px solid red; */
 }
 
 #ppi {
@@ -162,12 +172,16 @@ footer li {
     grid-area: ppiDescription;
 }
 
-
-
 .workGrid img {
     width: 300px;
     padding: 15px;
     margin: 20px;
+    /* outline: 3px solid red; */
+}
+
+.projectButton {
+    display: grid;
+    justify-content: center;
     /* outline: 3px solid red; */
 }
 
@@ -217,10 +231,17 @@ h1 {
 h2 {
     padding: 0px 50px;
     font-size: 36px;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Noto Serif Telugu', serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 h4 {
     font-size: 22px;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Noto Serif Telugu', serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Raleway', sans-serif;
 }
 
 
