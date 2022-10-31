@@ -231,9 +231,9 @@ h1 {
 h2 {
     padding: 0px 50px;
     font-size: 36px;
-    font-family: 'Montserrat', sans-serif;
+    /* font-family: 'Montserrat', sans-serif;
     font-family: 'Noto Serif Telugu', serif;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif; */
 }
 
 h4 {
