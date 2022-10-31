@@ -5,11 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Esther Yi</title>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <header class="navigation flexContainer">
-        <!--not sure if the class below specifies two different classes-->
         <div class="logo">
             <img src="images/eylogo.jpeg" alt="logo">
         </div>
@@ -25,21 +25,29 @@
 
     <section>
         <div class="heroImg">
-            <img src="images/forest crop.png" alt="hero">
+            <!-- <img src="images/forest crop.png" alt="hero"> -->
+            <div class="content">
+                <h1>Hey there! I'm Esther!</h1>
+            </div>
         </div>
-        <div class="content">
-            <h1>Hey there! I'm Esther!</h1>
-            <p>I'm a UX/UI designer based in Denver, Colorado. I am passionate about cultivating inclusive, innovative, and accessible digital experiences for people
-            </p>
-            <p>In my free time, I like to travel, spend time in the outdoors, and find great food spots around the city. I live for the experience!
-            </p>
-            <button>Download Resume</button>
+        <div class="aboutMe">
+            <div class="hikingImg">
+                <img src="images/estherhiking.png" alt="hiking">
+            </div>
+            <div class="meContent">
+                <p>I'm a UX/UI designer based in Denver, Colorado. I am passionate about cultivating inclusive, innovative, and accessible digital experiences for people
+                </p>
+                <p>In my free time, I like to travel, spend time in the outdoors, and find great food spots around the city. I live for the experience!
+                </p>
+                <button>Download Resume</button>
+            </div>
         </div>
+        
     </section>
     
     <!-- My UX Skills section coded using CSS flex -->
     <section class="mySkills">
-        <h1>My UX Skills</h1>
+        <h2>My UX Skills</h2>
         <div class="flexContainer skillContainer">
             <!-- Skill #1 -->
             <div class="flexChild">
@@ -64,7 +72,7 @@
     </section>
 <!-- My Work -->
     <section class="myWork">
-        <h1>My Work</h1>
+        <h2>My Work</h2>
         <div class="workGrid">
             <div id="treasury">
                 <img src="images/treasurymockup2.png" alt="treasury case study mockup image">
@@ -97,4 +105,5 @@
             </ul>
         </footer>
 </body>
+<script src="js/index.js"></script>
 </html>

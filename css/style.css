@@ -20,8 +20,10 @@ body {
 }
 
 header {
-    padding: 15px;
+    padding: .5px;
     background-color: #493B33;
+    height: 60px;
+    /* outline: 3px solid red; */
 }
 
 header ul {
@@ -41,19 +43,40 @@ header li {
 } 
 
 .heroImg {
-    width: 1200px;
+    /* width: 1200px; */
     /* height: 500px; */
-    padding: 25px;
+    /* padding: 25px; */
     /* transform: scale(.5); */
     /* outline: 3px solid red; */
+    background-image: url(../images/forest\ crop.png);
+    background-repeat: none;
 }
 
 .content {
-    max-width: 500px;
+    max-width: 700px;
     margin: 0 auto;
     padding: 50px;
-    background-color: #FCFAF3;
-    text-align: left;
+    /* background-color: #FCFAF3; */
+    text-align: right;
+    color: #FCFAF3;
+    background-color: transparent;
+    /* outline: 3px solid red; */
+}
+
+.aboutMe {
+    margin: 0 auto;
+    display: flex;
+    /* outline: 3px solid red; */
+}
+
+.aboutMe img {
+    width: 270px;
+    margin: 50px 50px 0px 50px;
+    transform: translate(0%, -40%);
+}
+
+.meContent {
+    padding: 80px 30px 1px 30px;
 }
 
 button {
@@ -62,6 +85,8 @@ button {
     border: none;
     padding: 10px 20px;
     width: 200px; 
+    text-align: center;
+    cursor: pointer;
 }
 
 footer {
@@ -163,15 +188,35 @@ footer li {
         width: 100%;
         text-align: center;
     }
+    .aboutMe {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .aboutMe img {
+        transform: translate(0%, 0%);
+    }
+    .content {
+        text-align: center;
+    }
+    .meContent {
+        padding: 10px 25px;    
+    }
 }
 
 .viewAll {
     text-align: center;
+    cursor: pointer;
 }
 
 h1 {
     margin: 50px;
-    font-size: 34px;
+    font-size: 45px;
+}
+
+h2 {
+    padding: 0px 50px;
+    font-size: 36px;
 }
 
 h4 {
