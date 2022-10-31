@@ -99,6 +99,10 @@ button {
     border-radius: 10px;
 }
 
+#resumeButton {
+    margin: 0 auto;
+}
+
 footer {
     background-color: #493B33;
     padding: 10px;
@@ -182,7 +186,7 @@ footer li {
 
 .projectButton {
     display: grid;
-    justify-content: center;
+    margin: 0 auto;
     /* outline: 3px solid red; */
 }
 
@@ -250,7 +254,8 @@ h4 {
 }
 
 p {
-    font-size: 24pxpx;
+    font-size: 18px;
+    line-height: 50x;
 }
 
 
