@@ -1,3 +1,5 @@
+console.log("Hover state");
+
 $( "button").hover(
     function() {
         $(this).css("background-color", "#DDE5B6");
@@ -8,3 +10,4 @@ $( "button").hover(
         $(this).css("color", "black");
     }
 );
+
