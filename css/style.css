@@ -80,7 +80,7 @@ header li {
 
 .meContent {
     padding: 80px 30px 1px 30px;
-    outline: 3px solid red;
+    /* outline: 3px solid red; */
 }
 
 #aboutMe {
